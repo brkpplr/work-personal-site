@@ -1,42 +1,78 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 2rem;
   padding: 2rem;
-  text-align: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+
+  .card {
+    .name {
+      font-size: 2rem;
+      font-weight: 400;
+      transition: 0.5s;
+    }
+    .name:hover {
+      color: #646cff;
+    }
+
+    .description{
+      transition: 0.5s;
+    }
+    .description:hover {
+      color: #646cff;
+    }
+  }
 }
 
-.logo {
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  
+  .social {
+    display: flex;
+    margin-right: 1em;
+    border: solid 0.25rem transparent;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .social:hover {
+    border-color: #646cff;
+    color: #646cff;
+  }
+}
+.portrait {
   height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  border: solid 0.25rem #ffffff;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin-right: 1rem;
 }
-.logo:hover {
+
+.portrait:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  border-color: #646cff;
 }
-.logo.react:hover {
+
+.portrait.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+/* @media (prefers-reduced-motion: no-preference) {
+} */
