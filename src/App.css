@@ -7,29 +7,14 @@
   display: flex;
   flex-direction: row;
 
-  .card {
-    .name {
-      font-size: 2rem;
-      font-weight: 400;
-      transition: 0.5s;
-    }
-    .name:hover {
-      color: #646cff;
-    }
-
-    .description{
-      transition: 0.5s;
-    }
-    .description:hover {
-      color: #646cff;
-    }
-  }
+ 
 }
 
 .links {
   display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
   
   .social {
     display: flex;
@@ -47,6 +32,7 @@
     color: #646cff;
   }
 }
+
 .portrait {
   height: 6em;
   border: solid 0.25rem #ffffff;
@@ -64,6 +50,25 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.card {
+  margin-top: 1rem;
+
+  .name {
+    font-size: 2rem;
+    font-weight: 400;
+    transition: 0.5s;
+  }
+  .name:hover {
+    color: #646cff;
+  }
+
+  .description{
+    transition: 0.5s;
+  }
+  .description:hover {
+    color: #646cff;
+  }
+}
 
 /* @keyframes logo-spin {
   from {

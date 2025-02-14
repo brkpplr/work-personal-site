@@ -8,18 +8,18 @@ function App() {
     <>
       <div className="header">
         <img src={selfPortrait} className="portrait" />
-        <div className='card'>
-          <div className="name">Bruno Koppel</div>
-          <div className="description">Software Engineer</div>
+        <div className="links">
+          <a className="social" href="https://github.com/brko8088">
+            <GitHubIcon />
+          </a>
+          <a className="social" href="https://www.linkedin.com/in/bruno-softdev/">
+            <LinkedInIcon />
+          </a>
         </div>
       </div>
-      <div className="links">
-        <a className="social" href="https://github.com/brko8088">
-          <GitHubIcon />
-        </a>
-        <a className="social" href="https://www.linkedin.com/in/bruno-softdev/">
-          <LinkedInIcon />
-        </a>
+      <div className='card'>
+        <div className="name">Bruno Koppel</div>
+        <div className="description">Software Engineer</div>
       </div>
     </>
   )
