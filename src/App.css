@@ -1,13 +1,15 @@
 #root {
   max-width: 1280px;
-  margin: 0 2rem;
-  padding: 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 .header {
   display: flex;
   flex-direction: row;
+}
 
- 
+.vertical-space {
+  height: 1rem;
 }
 
 .links {
@@ -70,14 +72,62 @@
   }
 }
 
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.projects {
+  margin-top: 1rem;
 
-/* @media (prefers-reduced-motion: no-preference) {
-} */
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .toggle {
+      color: #ffffff;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.project-card {
+  border: solid 0.125rem #ffffff;
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  
+  .project-media {
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    max-height: 20rem;
+    max-width: 20rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.5s;
+  }
+  .name:hover {
+    color: #646cff;
+  }
+
+  .description{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .description:hover {
+    color: #646cff;
+  }
+}
