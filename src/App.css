@@ -105,6 +105,7 @@
   border: solid 0.125rem #ffffff;
   border-radius: 0.5rem;
   padding: 0rem 0.5rem 0.5rem 0.5rem;
+  max-width: 15rem;
   
   .project-media {
     border-radius: 0.5rem;

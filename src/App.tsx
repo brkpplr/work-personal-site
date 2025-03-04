@@ -64,6 +64,27 @@ function App() {
               <a href="https://github.com/brko8088/webapp-game-of-life">Github Repo Link</a>
             </div>
           </div>
+          <div className='project-card'>
+            <div className="name">Python Blog Website</div>
+            <div className="description">
+              <p>Blogging site that allows users to sign up, make posts and like posts from other users, as well as comment on them, create accounts and put their social links</p>
+              <a href="https://github.com/brko8088/research-djangoBlogWebsite">Github Repo Link</a>
+            </div>
+          </div>
+          <div className='project-card'>
+            <div className="name">List of LeetCode Solutions</div>
+            <div className="description">
+              <p>Trying to complete all Leetcode problems and their Unit Tests</p>
+              <a href="https://github.com/brko8088/research-algorithms">Github Repo Link</a>
+            </div>
+          </div>
+          <div className='project-card'>
+            <div className="name">Video Game in Godot</div>
+            <div className="description">
+              <p>Simple game that I'm currently working on</p>
+              <a href="https://github.com/brko8088/game-learning">Github Repo Link</a>
+            </div>
+          </div>
         </div>
       </div>
     </>
