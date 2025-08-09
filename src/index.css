@@ -23,6 +23,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -52,31 +54,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--text-color);
-    background-color: var(--background-color);
-  }
-  a:hover {
-    color: var(--hover-color);
-  }
-  button {
-    background-color: var(--card-background-color);
-  }
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: var(--text-color);
-    background-color: var(--background-color);
-  }
-  a:hover {
-    color: var(--hover-color);
-  }
-  button {
-    background-color: var(--card-background-color);
-  }
 }
