@@ -66,3 +66,17 @@ button:focus-visible {
     background-color: var(--card-background-color);
   }
 }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  a:hover {
+    color: var(--hover-color);
+  }
+  button {
+    background-color: var(--card-background-color);
+  }
+}
