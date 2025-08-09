@@ -1,0 +1,21 @@
+/* src/themes.css */
+[data-theme='dark'] {
+    --background-color: #242424;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --card-background-color: #1a1a1a;
+    --border-color: #ffffff;
+    --hover-color: #646cff;
+    --hover-border-color: #646cff;
+    --social-link-color: #ffffff;
+  }
+  
+  [data-theme='light'] {
+    --background-color: #ffffff;
+    --text-color: #213547;
+    --card-background-color: #f9f9f9;
+    --border-color: #213547;
+    --hover-color: #747bff;
+    --hover-border-color: #747bff;
+    --social-link-color: #213547;
+  }
+  
