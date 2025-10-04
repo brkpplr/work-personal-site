@@ -100,35 +100,3 @@
     gap: 1rem;
   }
 }
-
-.project-card {
-  border: solid 0.125rem var(--border-color);
-  border-radius: 0.5rem;
-  padding: 0rem 0.5rem 0.5rem 0.5rem;
-  max-width: 15rem;
-  
-  .project-media {
-    border-radius: 0.5rem;
-    transition: 0.5s;
-    max-height: 20rem;
-    max-width: 20rem;
-  }
-
-  .name {
-    font-size: 1.5rem;
-    font-weight: 400;
-    transition: 0.5s;
-  }
-  .name:hover {
-    color: var(--hover-color);
-  }
-
-  .description{
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
-  }
-  .description:hover {
-    color: var(--hover-color);
-  }
-}
