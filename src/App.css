@@ -46,30 +46,30 @@
     .portrait.react:hover {
       filter: drop-shadow(0 0 2em #61dafbaa);
     }
-
-    .social {
-      display: flex;
-      margin-right: 0.5em;
-      border: solid 0.1rem transparent;
-      border-radius: 0.5rem;
-      font-size: 1.5rem;
-      color: var(--social-link-color);
-      border-color: var(--border-color);
-      padding: 0.5rem;
-      transition: 0.5s;
-    }
-
-    .social:hover {
-      border-color: var(--hover-border-color);
-      color: var(--hover-color);
-    }
   }
 }
 
 .dashboard {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1rem;
+
+  .social {
+    display: flex;
+    margin-right: 0.5em;
+    border: solid 0.1rem transparent;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--social-link-color);
+    border-color: var(--border-color);
+    padding: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .social:hover {
+    border-color: var(--hover-border-color);
+    color: var(--hover-color);
+  }
 }
 
 .projects {
