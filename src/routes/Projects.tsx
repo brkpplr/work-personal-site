@@ -2,6 +2,7 @@ import './Projects.css';
 import { useEffect, useState } from 'react';
 import { projectList } from '../data/projectList';
 import ProjectCard from '../components/ProjectCard';
+import NavBar from '../components/NavBar';
 
 function Projects() {
   const [displayMode, setDisplayMode] = useState<'grid' | 'list'>('grid');
@@ -16,15 +17,18 @@ function Projects() {
   }, [displayMode]);
 
   return (
-    <div className="projects">
-      <div className='header'>
-        <h2>Projects</h2>
-        <button onClick={toggleDisplayMode}>{displayMode === 'grid' ? 'List View' : 'Grid View'}</button>
-      </div>
-      <div className={displayMode}>
-        {projectList.map((project) => (
-          <ProjectCard key={project.id} displayMode={displayMode} project={project} />
-        ))}
+    <div>
+      <NavBar/>
+      <div className="projects">
+        <div className='header'>
+          <h2>Projects</h2>
+          <button onClick={toggleDisplayMode}>{displayMode === 'grid' ? 'List View' : 'Grid View'}</button>
+        </div>
+        <div className={displayMode}>
+          {projectList.map((project) => (
+            <ProjectCard key={project.id} displayMode={displayMode} project={project} />
+          ))}
+        </div>
       </div>
     </div>
   );

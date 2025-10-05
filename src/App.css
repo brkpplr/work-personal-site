@@ -7,52 +7,11 @@
   background-color: var(--background-color);
 }
 
-.navbar {
-  padding: 0.25rem;
-  display: flex;
-  border-bottom: solid 0.125rem var(--border-color);
-  justify-content: space-between;
-  align-items: center;
-
-  .left-tray {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .title {
-      font-size: 2rem;
-      font-weight: 400;
-      transition: 0.5s;
-      padding-right: 1rem;
-    }
-
-    .title:hover {
-      color: var(--hover-color);
-    }
-
-    .portrait {
-      height: 3em;
-      border: solid 0.1rem var(--border-color);
-      border-radius: 0.5rem;
-      transition: 0.5s;
-      margin-right: 1rem;
-    }
-
-    .portrait:hover {
-      filter: drop-shadow(0 0 2em var(--hover-color));
-      border-color: var(--hover-border-color);
-    }
-
-    .portrait.react:hover {
-      filter: drop-shadow(0 0 2em #61dafbaa);
-    }
-  }
-}
-
 .dashboard {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  gap: 16px;
 
   .social {
     display: flex;
